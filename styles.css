@@ -16,7 +16,7 @@ body {
 }
 
 .logo {
-    margin-top: 5vw;
+    margin-top: 2vw;
     margin-bottom: 4vh;
 }
 
@@ -93,11 +93,21 @@ button {
     flex-grow: 1;
 }
 
-
+button:hover {
+    background-color: var(--paleblue);
+}
 
 #image {
-    margin-top: 5vw;
-    margin-bottom: 15vw;
+    margin-bottom: 3.5vw;
+    padding: 7.5vw;
+    max-width: 750px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+footer {
+    color: var(--gray);
+    font-size: 1rem;
 }
 
 @media all and (max-width: 450px){
@@ -114,7 +124,6 @@ button {
     }
 
     form {
-        display: block;
         margin: 5vw 10vw;
         width: 80vw;
         margin-bottom: 15vw;
@@ -124,4 +133,8 @@ button {
         margin: 2vw;
     }
     
+    footer {
+        font-size: 0.7rem;
+    }
+
 }

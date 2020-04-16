@@ -7,12 +7,11 @@ form.addEventListener("submit", (e) => {
   const emailValue = email.value;
 
   if (!isValid(emailValue)) {
-    label.classList.remove("form_error")
-    label.classList.add("form-error");
-    email.classList.add("email-error");
+    label.classList.replace("form_error", "form-error");
+    email.classList.replace("email-ok", "email-error");
   } else {
-    label.classList.remove("form-error");
-    label.classList.add("form_error")
+    label.classList.replace("form-error", "form_error");
+    email.classList.replace("email-error", "email-ok");
   }
 });
 
