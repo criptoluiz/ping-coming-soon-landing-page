@@ -105,6 +105,22 @@ button:hover {
     margin-right: auto;
 }
 
+ul {
+    display: flex;
+    list-style: none;
+    align-content: center;
+    justify-content: center;
+}
+
+li {
+    margin: 3px 20px;
+    color: var(--blue);
+}
+
+i {
+    height: 30px;
+}
+
 footer {
     color: var(--gray);
     font-size: 1rem;
