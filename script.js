@@ -9,7 +9,7 @@ form.addEventListener("submit", (e) => {
   if (!isValid(emailValue)) {
     label.classList.remove("form_error")
     label.classList.add("form-error");
-    
+    email.classList.add("email-error");
   } else {
     label.classList.remove("form-error");
     label.classList.add("form_error")
